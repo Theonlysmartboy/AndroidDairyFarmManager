@@ -13,8 +13,6 @@ import android.content.SharedPreferences;
 import com.otemainc.mydairyfarmmanager.ui.MainActivity;
 import com.otemainc.mydairyfarmmanager.ui.auth.LoginActivity;
 
-import java.util.HashMap;
-
 public class UserSession {
     // Shared Preferences
     SharedPreferences pref;
@@ -30,18 +28,6 @@ public class UserSession {
     public static final String FIRST_TIME = "firsttime";
     // All Shared Preferences Keys
     private static final String IS_LOGIN = "IsLoggedIn";
-    // User name (make variable public to access from outside)
-    public static final String KEY_NAME = "name";
-    // Email address (make variable public to access from outside)
-    public static final String KEY_EMAIL = "email";
-    // Mobile number (make variable public to access from outside)
-    public static final String KEY_MOBiLE = "mobile";
-    // user avatar (make variable public to access from outside)
-    public static final String KEY_PHOTO = "photo";
-    // number of items in our cart
-    public static final String KEY_CART = "cartvalue";
-    // number of items in our wishlist
-    public static final String KEY_WISHLIST = "wishlistvalue";
     // check first time app launch
     public static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
     // Constructor
@@ -53,7 +39,7 @@ public class UserSession {
     /**
      * Create login session
      * */
-    public void createLoginSession(String name, String email, String mobile, String photo){
+    public void createLoginSession(){
         // Storing login value as TRUE
         editor.putBoolean(IS_LOGIN, true);
         // commit changes
@@ -77,27 +63,6 @@ public class UserSession {
             context.startActivity(m);
         }
 
-    }
-
-    /**
-     * Get stored session data
-     * */
-    public HashMap<String, String> getUserDetails(){
-        HashMap<String, String> user = new HashMap<>();
-        // user name
-        user.put(KEY_NAME, pref.getString(KEY_NAME, null));
-
-        // user email id
-        user.put(KEY_EMAIL, pref.getString(KEY_EMAIL, null));
-
-        // user phone number
-        user.put(KEY_MOBiLE, pref.getString(KEY_MOBiLE, null));
-
-        // user avatar
-        user.put(KEY_PHOTO, pref.getString(KEY_PHOTO, null)) ;
-
-        // return user
-        return user;
     }
 
     /**

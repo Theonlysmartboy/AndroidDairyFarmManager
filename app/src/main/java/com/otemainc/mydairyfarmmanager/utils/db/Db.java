@@ -42,7 +42,7 @@ public class Db extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         if(oldVersion <1){
-
+            //we simply add new tables to existing ones
         }
     }
 
@@ -74,12 +74,14 @@ public class Db extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor user = db.rawQuery("SELECT * from tbl_users",null);
         user.moveToFirst();
+        user.close();
         return user.getString(5);
     }
     public String getToken() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor user = db.rawQuery("SELECT * from tbl_users",null);
         user.moveToFirst();
+        user.close();
         return user.getString(4);
     }
 

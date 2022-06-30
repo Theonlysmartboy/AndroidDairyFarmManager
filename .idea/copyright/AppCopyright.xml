@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="Copyright (c) &amp;#36;originalComment.match(&quot;Copyright \(c\) (\d+)&quot;, 1, &quot;-&quot;)&amp;#36;today.year. This app and its source code is property of Otema technologies and is distributed for use by its clients on a use as is basis.&#10;All rights are reserved by Otema technologies. It is therefore illegal to modify, copy or use any part of this system or its source code for any purpose different from that intended by the developer.&#10;The dependencies used in the process of building this system and copyrights of their respective developers and are distributed with this system on the basis of each of those copyrights." />
+    <option name="myName" value="AppCopyright" />
+  </copyright>
+</component>

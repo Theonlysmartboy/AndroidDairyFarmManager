@@ -4,12 +4,19 @@
  * The dependencies used in the process of building this system and copyrights of their respective developers and are distributed with this system on the basis of each of those copyrights.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id 'com.android.application' version '7.2.1' apply false
-    id 'com.android.library' version '7.2.1' apply false
-}
+package com.otemainc.mydairyfarmmanager.ui.welcome;
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import com.otemainc.mydairyfarmmanager.R;
+
+public class OnBoardingActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_on_boarding);
+    }
 }

@@ -15,4 +15,13 @@
     <string name="second">Second</string>
     <string name="first">First</string>
     <string name="next">Next</string>
+    <string name="designer">Powered By Otema Technologies</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="welcome_decsr">Welcome to your Dairy Farm Manager</string>
+    <string name="asset_management_text">Farm Asset Management</string>
+    <string name="asset_management_descr">You can quickly and easily add,monitor and manage your farm assets</string>
+    <string name="partner_title">Staff Monitoring</string>
+    <string name="partner_text">My farm manager makes it easy to manage your staffs</string>
+    <string name="payment_title">Finance management</string>
+    <string name="payment_descr">Easily view and asses your expenditures and incomes using aesthetically designed charts and tables.</string>
 </resources>

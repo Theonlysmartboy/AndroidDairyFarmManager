@@ -9,14 +9,22 @@ package com.otemainc.mydairyfarmmanager.ui.welcome;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.otemainc.mydairyfarmmanager.R;
+import com.otemainc.mydairyfarmmanager.utils.db.UserSession;
 
 public class SplashActivity extends AppCompatActivity {
+    private UserSession session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        session = new UserSession(getApplicationContext());
         setContentView(R.layout.activity_splash);
+        splash();
+    }
+    private void splash() {
+        new Handler().postDelayed(() -> session.checkLogin(),5000);
     }
 }

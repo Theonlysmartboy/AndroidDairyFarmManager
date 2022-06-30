@@ -26,8 +26,8 @@
                 <shape>
                     <padding android:bottom="5dp"/>
                     <gradient
-                        android:startColor="@color/tertiary"
-                        android:endColor="@color/secondary"
+                        android:startColor="@color/md_red_500"
+                        android:endColor="@color/md_red_800"
                         android:angle="270" />
                     <corners
                         android:radius="19dp"/>
@@ -56,8 +56,8 @@
                 <shape>
                     <padding android:bottom="5dp"/>
                     <gradient
-                        android:startColor="@color/secondary"
-                        android:endColor="@color/tertiary"
+                        android:startColor="@color/md_red_800"
+                        android:endColor="@color/md_red_500"
                         android:angle="270" />
                     <corners
                         android:radius="19dp"/>

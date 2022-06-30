@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable/ic_next.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable/rounded_gold_button.xml" value="0.109" />
         <entry key="app/src/main/res/drawable/rounded_green_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selected.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable/sunrise_gradient.xml" value="0.108" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21614583333333334" />
         <entry key="app/src/main/res/layout/activity_on_boarding.xml" value="0.23020833333333332" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.21614583333333334" />
+        <entry key="app/src/main/res/layout/on_boarding_layout.xml" value="0.1" />
       </map>
     </option>
   </component>

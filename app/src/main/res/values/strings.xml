@@ -6,4 +6,13 @@
 
 <resources>
     <string name="app_name">My Dairy Farm Manager</string>
+    <string name="get_started">Get Started</string>
+    <string name="random_text">placeholder for description</string>
+    <string name="welcome">Welcome</string>
+    <string name="app_logo">App Logo</string>
+    <string name="previous">Previous</string>
+    <string name="third">Third</string>
+    <string name="second">Second</string>
+    <string name="first">First</string>
+    <string name="next">Next</string>
 </resources>

@@ -8,15 +8,146 @@
     <!-- Base application theme. -->
     <style name="Theme.MyDairyFarmManager" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/primaryDark</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/tertiary</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="WhiteTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_gold_button</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/tertiary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerDarkMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_green_button</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/primaryDark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="fonts">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="headingFonts">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="CustomTheme" parent="MaterialDrawerTheme">
+        <!-- ...and here we setting appcompat’s color theming attrs -->
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+        <item name="titleTextColor">@color/md_grey_600</item>
+
+        <!-- MaterialDrawer specific values -->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+    </style>
+
+    <style name="homeGridText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="homeGridImage">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="homeGridCard">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="greenTitleCard">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center</item>
+        <item name="cardBackgroundColor">@color/primary</item>
+    </style>
+
+    <style name="goldTitleCard">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center</item>
+        <item name="cardBackgroundColor">@color/tertiary</item>
+    </style>
+
+    <style name="orangeTitleCard">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center</item>
+        <item name="cardBackgroundColor">@color/secondary</item>
+    </style>
+
+    <!--Defining colors for TextInputLayout's EditText-->
+
+    <style name="Theme.MyDairyFarmManager.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="Theme.MyDairyFarmManager.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyDairyFarmManager.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

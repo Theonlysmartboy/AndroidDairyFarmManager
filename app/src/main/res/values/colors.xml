@@ -13,4 +13,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="gray">#808080</color>
+    <color name="light_black">#4a4a4a</color>
+    <color name="primary">#228B22</color>
+    <color name="primaryDark">#006400</color>
+    <color name="secondary">#fd9434</color>
+    <color name="tertiary">#ffc33a</color>
 </resources>
